@@ -30,11 +30,48 @@ namespace Management_Store
 
         private void btnBrand_Click(object sender, EventArgs e)
         {
-            frmDanhSachThuongHieu frm = new frmDanhSachThuongHieu();
+            frmBrandList frm = new frmBrandList();
             frm.TopLevel = false;
             panel4.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();
+        }
+
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            frmCategoryList frm = new frmCategoryList();
+            frm.TopLevel = false;
+            panel4.Controls.Add(frm);
+            frm.BringToFront();
+            frm.LoadCategory();
+            frm.Show();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            frmProductList frm = new frmProductList();
+            frm.TopLevel = false;
+            panel4.Controls.Add(frm);
+            frm.BringToFront();
+            frm.LoadRecords();
+            frm.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStockIn_Click_1(object sender, EventArgs e)
+        {
+            frmStockIn frm = new frmStockIn();
+            frm.LoadProduct();
+            frm.ShowDialog();
         }
     }
 }

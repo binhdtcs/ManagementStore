@@ -11,13 +11,13 @@ using System.Data.SqlClient;
 
 namespace Management_Store
 {
-    public partial class frmThuongHieu : Form
+    public partial class frmBrand : Form
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnection dbcon = new DBConnection();
-        frmDanhSachThuongHieu frmlist;
-        public frmThuongHieu(frmDanhSachThuongHieu flist)
+        frmBrandList frmlist;
+        public frmBrand(frmBrandList flist)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.MyConnection());
@@ -83,8 +83,13 @@ namespace Management_Store
 
             }catch(Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }

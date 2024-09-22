@@ -12,13 +12,13 @@ using System.Windows.Forms;
 
 namespace Management_Store
 {
-    public partial class frmDanhSachThuongHieu : Form
+    public partial class frmBrandList : Form
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
         DBConnection dbcon = new DBConnection();
-        public frmDanhSachThuongHieu()
+        public frmBrandList()
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.MyConnection());
@@ -27,7 +27,7 @@ namespace Management_Store
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            frmThuongHieu frm = new frmThuongHieu(this);
+            frmBrand frm = new frmBrand(this);
             frm.ShowDialog();
         }
 
@@ -51,12 +51,28 @@ namespace Management_Store
             string colName = dataGridView1.Columns[e.ColumnIndex].Name;
             if(colName == "Edit")
             {
-                frmThuongHieu frm = new frmThuongHieu(this);
+                frmBrand frm = new frmBrand(this);
                 frm.lblID.Text = dataGridView1[1, e.RowIndex].Value.ToString();
-
+               
                 frm.txtBrand.Text = dataGridView1[2,e.RowIndex].Value.ToString();
+                frm.btnSave.Enabled = false;
+                frm.btnUpdate.Enabled = true;
                 frm.ShowDialog();
+
+            }else if (colName == "Delete")
+            {
+                if(MessageBox.Show("Bạn chắc chắn muốn xóa không?","Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cn.Open();
+                    cm = new SqlCommand("delete from tblbrand where id like '" + dataGridView1[1, e.RowIndex].Value.ToString() + "'",cn);
+                    cm.ExecuteNonQuery();
+                    cn.Close();
+                    
+                    MessageBox.Show("Đã xóa", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);     
+                    LoadRecords();
+                }
             }
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
