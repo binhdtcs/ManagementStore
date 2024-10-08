@@ -43,13 +43,14 @@ namespace Management_Store
             int i = 0;
             dataGridView1.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("Select p.pcode,p.pdesc,b.brand,c.category,p.price,p.qty from tblProduct as p inner join tblBrand as b on b.id = p.bid inner join tblCategory as c on c.id = p.cid where p.pdesc like '" + txtSearch.Text + "%'", cn);
+            cm = new SqlCommand("Select p.pcode,p.barcode,p.pdesc,b.brand,c.category,p.price,p.reorder from tblProduct as p inner join tblBrand as b on b.id = p.bid inner join tblCategory as c on c.id = p.cid where p.pdesc like '" + txtSearch.Text + "%'", cn);
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
                 i++;
-                dataGridView1.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString());
+                dataGridView1.Rows.Add(i,dr[0].ToString(),dr[1].ToString(),dr[2].ToString(),dr[3].ToString(),dr[4].ToString(),dr[5].ToString(),dr[6].ToString());
             }
+            dr.Close();
             cn.Close();
             
         }
@@ -68,17 +69,18 @@ namespace Management_Store
                 frmProduct frm = new frmProduct(this);
                 frm.btnSave.Enabled = false;
                 frm.btnUpdate.Enabled = true; 
-                frm.txtPcode.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                frm.txtPdesc.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                frm.txtPrice.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                frm.cboBrand.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString(); 
-                frm.cboCategory.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                
+                frm.txtPcode.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                frm.txtBarcode.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                frm.txtPdesc.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                frm.txtPrice.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                frm.cboBrand.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString(); 
+                frm.cboCategory.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                frm.txtReorder.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
                 frm.ShowDialog();
             }
-            else
+            else if(colName =="Delete")
             {
-                if(MessageBox.Show("Bạn chắc chắn muốn xóa không?","Delete Record",MessageBoxButtons.YesNo ,MessageBoxIcon.Question) == DialogResult.Yes)
+                if(MessageBox.Show("Bạn chắc chắn muốn xóa không?","Xóa",MessageBoxButtons.YesNo ,MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
                     cm = new SqlCommand("delete from tblproduct where pcode like '" + dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString() + "'",cn);

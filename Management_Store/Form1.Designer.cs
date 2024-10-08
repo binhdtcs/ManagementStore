@@ -31,18 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnAdjustment = new System.Windows.Forms.Button();
+            this.btnSalesHistory = new System.Windows.Forms.Button();
             this.btnStockIn = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnUser = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.btnBrand = new System.Windows.Forms.Button();
             this.btnCategory = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbName = new System.Windows.Forms.Label();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.lblname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
@@ -55,24 +56,25 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(975, 40);
+            this.panel1.Size = new System.Drawing.Size(1444, 40);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.Controls.Add(this.btnAdjustment);
+            this.panel2.Controls.Add(this.btnSalesHistory);
             this.panel2.Controls.Add(this.btnStockIn);
             this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.btnUser);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.btnBrand);
             this.panel2.Controls.Add(this.btnCategory);
             this.panel2.Controls.Add(this.btnProduct);
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.lbName);
+            this.panel2.Controls.Add(this.lblRole);
+            this.panel2.Controls.Add(this.lblname);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 40);
@@ -80,16 +82,52 @@
             this.panel2.Size = new System.Drawing.Size(326, 730);
             this.panel2.TabIndex = 1;
             // 
+            // btnAdjustment
+            // 
+            this.btnAdjustment.FlatAppearance.BorderSize = 0;
+            this.btnAdjustment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdjustment.ForeColor = System.Drawing.Color.White;
+            this.btnAdjustment.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjustment.Image")));
+            this.btnAdjustment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdjustment.Location = new System.Drawing.Point(3, 296);
+            this.btnAdjustment.Name = "btnAdjustment";
+            this.btnAdjustment.Size = new System.Drawing.Size(317, 40);
+            this.btnAdjustment.TabIndex = 5;
+            this.btnAdjustment.Text = "  ĐIỀU CHỈNH KHO";
+            this.btnAdjustment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdjustment.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAdjustment.UseVisualStyleBackColor = true;
+            this.btnAdjustment.Click += new System.EventHandler(this.btnAdjustment_Click);
+            // 
+            // btnSalesHistory
+            // 
+            this.btnSalesHistory.FlatAppearance.BorderSize = 0;
+            this.btnSalesHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalesHistory.ForeColor = System.Drawing.Color.White;
+            this.btnSalesHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnSalesHistory.Image")));
+            this.btnSalesHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalesHistory.Location = new System.Drawing.Point(0, 496);
+            this.btnSalesHistory.Name = "btnSalesHistory";
+            this.btnSalesHistory.Size = new System.Drawing.Size(320, 54);
+            this.btnSalesHistory.TabIndex = 4;
+            this.btnSalesHistory.Text = "  LỊCH SỬ BÁN HÀNG";
+            this.btnSalesHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalesHistory.UseVisualStyleBackColor = true;
+            this.btnSalesHistory.Click += new System.EventHandler(this.btnSalesHistory_Click);
+            // 
             // btnStockIn
             // 
             this.btnStockIn.FlatAppearance.BorderSize = 0;
             this.btnStockIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStockIn.ForeColor = System.Drawing.Color.White;
-            this.btnStockIn.Location = new System.Drawing.Point(15, 339);
+            this.btnStockIn.Image = ((System.Drawing.Image)(resources.GetObject("btnStockIn.Image")));
+            this.btnStockIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStockIn.Location = new System.Drawing.Point(3, 250);
             this.btnStockIn.Name = "btnStockIn";
             this.btnStockIn.Size = new System.Drawing.Size(308, 40);
             this.btnStockIn.TabIndex = 3;
-            this.btnStockIn.Text = "Quản lý mua hàng";
+            this.btnStockIn.Text = "  QUẢN LÝ NHẬP KHO";
+            this.btnStockIn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStockIn.UseVisualStyleBackColor = true;
             this.btnStockIn.Click += new System.EventHandler(this.btnStockIn_Click_1);
             // 
@@ -104,45 +142,57 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(320, 54);
             this.button9.TabIndex = 2;
-            this.button9.Text = "Đăng xuất ";
+            this.button9.Text = "  ĐĂNG XUẤT";
+            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button8
+            // btnUser
             // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 625);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(320, 54);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Quản lý người dùng";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnUser.FlatAppearance.BorderSize = 0;
+            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUser.ForeColor = System.Drawing.Color.White;
+            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
+            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.Location = new System.Drawing.Point(3, 616);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(320, 54);
+            this.btnUser.TabIndex = 2;
+            this.btnUser.Text = "  QUẢN LÝ NGƯỜI DÙNG";
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUser.UseVisualStyleBackColor = true;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // button7
             // 
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 565);
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(3, 556);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(320, 54);
             this.button7.TabIndex = 2;
-            this.button7.Text = "Cài đặt hệ thống";
+            this.button7.Text = "  CÀI ĐẶT CỬA HÀNG";
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(3, 505);
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(1, 441);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(320, 54);
+            this.button6.Size = new System.Drawing.Size(320, 50);
             this.button6.TabIndex = 2;
-            this.button6.Text = "Quản lý hồ sơ";
+            this.button6.Text = "  QUẢN LÝ HỒ SƠ";
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -151,11 +201,14 @@
             this.btnBrand.FlatAppearance.BorderSize = 0;
             this.btnBrand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrand.ForeColor = System.Drawing.Color.White;
-            this.btnBrand.Location = new System.Drawing.Point(0, 445);
+            this.btnBrand.Image = ((System.Drawing.Image)(resources.GetObject("btnBrand.Image")));
+            this.btnBrand.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBrand.Location = new System.Drawing.Point(0, 392);
             this.btnBrand.Name = "btnBrand";
             this.btnBrand.Size = new System.Drawing.Size(320, 54);
             this.btnBrand.TabIndex = 2;
-            this.btnBrand.Text = "Quản lý thương hiệu";
+            this.btnBrand.Text = "  QUẢN LÝ THƯƠNG HIỆU";
+            this.btnBrand.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBrand.UseVisualStyleBackColor = true;
             this.btnBrand.Click += new System.EventHandler(this.btnBrand_Click);
             // 
@@ -164,11 +217,14 @@
             this.btnCategory.FlatAppearance.BorderSize = 0;
             this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategory.ForeColor = System.Drawing.Color.White;
-            this.btnCategory.Location = new System.Drawing.Point(0, 396);
+            this.btnCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnCategory.Image")));
+            this.btnCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategory.Location = new System.Drawing.Point(0, 343);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Size = new System.Drawing.Size(320, 43);
             this.btnCategory.TabIndex = 2;
-            this.btnCategory.Text = "Quản lý danh mục";
+            this.btnCategory.Text = "  QUẢN LÝ DANH MỤC";
+            this.btnCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCategory.UseVisualStyleBackColor = true;
             this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
@@ -177,27 +233,16 @@
             this.btnProduct.FlatAppearance.BorderSize = 0;
             this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProduct.ForeColor = System.Drawing.Color.White;
-            this.btnProduct.Location = new System.Drawing.Point(3, 296);
+            this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
+            this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProduct.Location = new System.Drawing.Point(3, 207);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(320, 37);
             this.btnProduct.TabIndex = 2;
-            this.btnProduct.Text = "Quản lý sản phẩm";
+            this.btnProduct.Text = "  QUẢN LÝ SẢN PHẨM";
+            this.btnProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProduct.UseVisualStyleBackColor = true;
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(6, 243);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(320, 38);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Quản lý bán hàng";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -206,34 +251,37 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 195);
+            this.button1.Location = new System.Drawing.Point(3, 159);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(320, 42);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Bảng điều khiển";
+            this.button1.Text = "   BẢNG ĐIỀU KHIỂN";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // lblRole
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(103, 112);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Quản lý";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRole.AutoSize = true;
+            this.lblRole.ForeColor = System.Drawing.Color.White;
+            this.lblRole.Location = new System.Drawing.Point(106, 122);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(69, 23);
+            this.lblRole.TabIndex = 1;
+            this.lblRole.Text = "Quản lý";
+            this.lblRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbName
+            // lblname
             // 
-            this.lbName.AutoSize = true;
-            this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(158)))), ((int)(((byte)(132)))));
-            this.lbName.Location = new System.Drawing.Point(82, 89);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(130, 23);
-            this.lbName.TabIndex = 1;
-            this.lbName.Text = "Tên người dùng";
-            this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblname.AutoSize = true;
+            this.lblname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(158)))), ((int)(((byte)(132)))));
+            this.lblname.Location = new System.Drawing.Point(124, 89);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(130, 23);
+            this.lblname.TabIndex = 1;
+            this.lblname.Text = "Tên người dùng";
+            this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -247,10 +295,11 @@
             // 
             // panel4
             // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(326, 40);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(649, 730);
+            this.panel4.Size = new System.Drawing.Size(1118, 730);
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -258,7 +307,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 770);
+            this.ClientSize = new System.Drawing.Size(1444, 770);
             this.ControlBox = false;
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -281,19 +330,20 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnBrand;
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnProduct;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnStockIn;
+        public System.Windows.Forms.Label lblRole;
+        public System.Windows.Forms.Label lblname;
+        private System.Windows.Forms.Button btnSalesHistory;
+        private System.Windows.Forms.Button btnAdjustment;
     }
 }
 

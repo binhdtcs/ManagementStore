@@ -24,10 +24,7 @@ namespace Management_Store
             frmlist = flist;
         }
 
-        private void frmThuongHieu_Load(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void Clear()
         {

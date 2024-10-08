@@ -125,7 +125,7 @@
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(708, 30);
             this.txtCategory.TabIndex = 6;
-            this.txtCategory.TextChanged += new System.EventHandler(this.txtBrand_TextChanged);
+           
             // 
             // label2
             // 
@@ -135,7 +135,7 @@
             this.label2.Size = new System.Drawing.Size(89, 23);
             this.label2.TabIndex = 5;
             this.label2.Text = "Danh mục";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+           
             // 
             // lblID
             // 

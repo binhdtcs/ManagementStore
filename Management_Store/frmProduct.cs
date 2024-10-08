@@ -17,6 +17,7 @@ namespace Management_Store
         DBConnection dbcon = new DBConnection();
         SqlDataReader dr;
         frmProductList flist;
+        string stitle = "Simple POS system";
         public frmProduct(frmProductList frm)
         {
             InitializeComponent();
@@ -41,8 +42,6 @@ namespace Management_Store
             }
             dr.Close();
             cn.Close();
-
-
         }
 
         public void LoadBrand()
@@ -61,81 +60,47 @@ namespace Management_Store
 
         }
 
-        private void frmProduct_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (MessageBox.Show("Bạn có muốn lưu sản phẩm không?", "Save Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    string bid = "";string cid ="";
-                    cn.Open();
-                    cm= new SqlCommand("Select id from tblBrand where brand like '" + cboBrand.Text + "'", cn);
-                    dr = cm.ExecuteReader();
-                    dr.Read();
-                    if (dr.HasRows)
-                    {
-                        bid = dr[0].ToString(); 
-
-                    }
-                    dr.Close();
-                    cn.Close();
-
-                    cn.Open();
-                    cm = new SqlCommand("Select id from tblCategory where category like '" + cboCategory.Text + "'", cn);
-                    dr = cm.ExecuteReader();
-                    dr.Read();
-                    if (dr.HasRows)
-                    {
-                        cid = dr[0].ToString();
-
-                    }
-                    dr.Close();
-                    cn.Close();
 
 
-                    cn.Open();
-                    cm = new SqlCommand("INSERT INTO tblProduct (pcode,barcode, pdesc, bid, cid, price) VALUES(@pcode, @pdesc, @bid, @cid, @price)", cn);
-                    cm.Parameters.AddWithValue("@pcode",txtPcode.Text);
-              
-                    cm.Parameters.AddWithValue("@pdesc", txtPdesc.Text);
-                    cm.Parameters.AddWithValue("@bid", bid);
-                    cm.Parameters.AddWithValue("@cid", cid);
-                    cm.Parameters.AddWithValue("@price", txtPrice.Text);
-                    cm.ExecuteNonQuery();
-                    cn.Close() ;
-                    MessageBox.Show("Lưu thành công");
-                    Clear(); 
-                    flist.LoadRecords();
-                }
-            }
-            catch (Exception ex) 
-            {
-                cn.Close();
-                MessageBox.Show(ex.Message);
-            }
-        }
+        
         public void Clear()
         {
             txtPrice.Clear();
             txtPdesc.Clear();
             txtPcode.Clear();
+            txtBarcode.Clear();
             cboBrand.Text = "";
             cboCategory.Text = "";
             txtPcode.Focus();
             btnSave.Enabled = true;
-           btnUpdate.Enabled = false;
+            btnUpdate.Enabled = false;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 46)
+            {
+
+            }else if(e.KeyChar == 8){
+
+            }
+                  
+            else if((e.KeyChar<48) || (e.KeyChar>57))
+            {
+                e.Handled = true;
+
+            }    
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
             {
-                if (MessageBox.Show("Bạn có muốn cập nhật sản phẩm không?", "Update Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Bạn có muốn cập nhật sản phẩm không?", "Cập nhật sản phẩm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string bid = ""; string cid = "";
                     cn.Open();
@@ -164,15 +129,17 @@ namespace Management_Store
 
 
                     cn.Open();
-                    cm = new SqlCommand("UPDATE tblProduct SET pdesc=@pdesc, bid=@bid, cid=@cid, price=@price where pcode like @pcode", cn);
+                    cm = new SqlCommand("UPDATE tblProduct SET barcode=@barcode, pdesc=@pdesc, bid=@bid, cid=@cid, price=@price,reorder=@reorder where pcode like @pcode", cn);
                     cm.Parameters.AddWithValue("@pcode", txtPcode.Text);
+                    cm.Parameters.AddWithValue("@barcode", txtBarcode.Text);
                     cm.Parameters.AddWithValue("@pdesc", txtPdesc.Text);
                     cm.Parameters.AddWithValue("@bid", bid);
                     cm.Parameters.AddWithValue("@cid", cid);
-                    cm.Parameters.AddWithValue("@price", txtPrice.Text);
+                    cm.Parameters.AddWithValue("@price", double.Parse(txtPrice.Text));
+                    cm.Parameters.AddWithValue("@reorder", int.Parse(txtReorder.Text));
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    MessageBox.Show("Cập nhật thành công");
+                    MessageBox.Show("Lưu thành công");
                     Clear();
                     flist.LoadRecords();
                     this.Dispose();
@@ -185,65 +152,61 @@ namespace Management_Store
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-            Clear();
-        }
-
-        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if(e.KeyChar == 46)
+            try
             {
+                if (MessageBox.Show("Bạn có muốn lưu sản phẩm không?", "Save Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    string bid = ""; string cid = "";
 
-            }else if(e.KeyChar == 8){
 
+                    cn.Open();
+                    cm = new SqlCommand("Select id from tblBrand where brand like '" + cboBrand.Text + "'", cn);
+                    dr = cm.ExecuteReader();
+                    dr.Read();
+                    if (dr.HasRows)
+                    {
+                        bid = dr[0].ToString();
+
+                    }
+                    dr.Close();
+                    cn.Close();
+
+                    cn.Open();
+                    cm = new SqlCommand("Select id from tblCategory where category like '" + cboCategory.Text + "'", cn);
+                    dr = cm.ExecuteReader();
+                    dr.Read();
+                    if (dr.HasRows)
+                    {
+                        cid = dr[0].ToString();
+
+                    }
+                    dr.Close();
+                    cn.Close();
+
+
+                    cn.Open();
+                    cm = new SqlCommand("INSERT INTO tblProduct(pcode,barcode, pdesc, bid, cid, price,reorder)VALUES(@pcode,@barcode, @pdesc, @bid, @cid, @price,@reorder)", cn);
+                    cm.Parameters.AddWithValue("@pcode", txtPcode.Text);
+                    cm.Parameters.AddWithValue("@barcode", txtBarcode.Text);
+                    cm.Parameters.AddWithValue("@pdesc", txtPdesc.Text);
+                    cm.Parameters.AddWithValue("@bid", bid);
+                    cm.Parameters.AddWithValue("@cid", cid);
+                    cm.Parameters.AddWithValue("@price", double.Parse(txtPrice.Text));
+                    cm.Parameters.AddWithValue("@reorder", int.Parse(txtReorder.Text));
+                    cm.ExecuteNonQuery();
+                    cn.Close();
+                    MessageBox.Show("Lưu thành công");
+                    Clear();
+                    flist.LoadRecords();
+                }
             }
-                  
-            else if((e.KeyChar<48) || (e.KeyChar>57))
+            catch (Exception ex)
             {
-                e.Handled = true;
-
-            }    
-        }
-
-        private void txtPdesc_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboCategory_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboBrand_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPrice_TextChanged(object sender, EventArgs e)
-        {
-
+                cn.Close();
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

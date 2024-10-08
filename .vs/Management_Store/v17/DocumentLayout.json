@@ -3,184 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\Management_Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|c:\\users\\hp\\source\\repos\\management_store\\management_store\\frmbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\frmbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\frmcategorylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmcategorylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\frmbrandlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmbrandlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\frmcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|c:\\users\\hp\\source\\repos\\management_store\\management_store\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\frmcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\frmstockin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmstockin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|C:\\Users\\HP\\source\\repos\\Management_Store\\management_store\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A6FA0B73-4215-48F9-83A3-DCC63F8EBF88}|Management_Store\\Management_Store.csproj|solutionrelative:management_store\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 1143,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\Form1.cs",
-              "RelativeDocumentMoniker": "Management_Store\\Form1.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\Form1.cs [Design]",
-              "RelativeToolTip": "Management_Store\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:20:58.96Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmBrandList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmBrandList.cs",
-              "RelativeDocumentMoniker": "Management_Store\\frmBrandList.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmBrandList.cs [Design]",
-              "RelativeToolTip": "Management_Store\\frmBrandList.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "frmProduct.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmProduct.cs",
+              "RelativeDocumentMoniker": "Management_Store\\frmProduct.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmProduct.cs",
+              "RelativeToolTip": "Management_Store\\frmProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:18:50.463Z"
+              "WhenOpened": "2024-10-08T06:38:44.492Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmCategoryList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmCategoryList.cs",
-              "RelativeDocumentMoniker": "Management_Store\\frmCategoryList.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmCategoryList.cs [Design]",
-              "RelativeToolTip": "Management_Store\\frmCategoryList.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "frmProductList.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmProductList.cs",
+              "RelativeDocumentMoniker": "Management_Store\\frmProductList.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmProductList.cs",
+              "RelativeToolTip": "Management_Store\\frmProductList.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAADAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:11:15.434Z"
+              "WhenOpened": "2024-10-08T06:39:56.837Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "frmProduct.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmProduct.cs",
               "RelativeDocumentMoniker": "Management_Store\\frmProduct.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmProduct.cs [Design]",
               "RelativeToolTip": "Management_Store\\frmProduct.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:09:12.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmProductList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmProductList.cs",
-              "RelativeDocumentMoniker": "Management_Store\\frmProductList.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmProductList.cs [Design]",
-              "RelativeToolTip": "Management_Store\\frmProductList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:09:50.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmBrand.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmBrand.cs",
-              "RelativeDocumentMoniker": "Management_Store\\frmBrand.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmBrand.cs [Design]",
-              "RelativeToolTip": "Management_Store\\frmBrand.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:18:51.302Z",
+              "WhenOpened": "2024-10-08T06:51:16.879Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmBrand.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmBrand.cs",
-              "RelativeDocumentMoniker": "Management_Store\\frmBrand.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmBrand.cs",
-              "RelativeToolTip": "Management_Store\\frmBrand.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAAAE4AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:19:07.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmCategory.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmCategory.cs",
-              "RelativeDocumentMoniker": "Management_Store\\frmCategory.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmCategory.cs [Design]",
-              "RelativeToolTip": "Management_Store\\frmCategory.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:11:16.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmProduct.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmProduct.cs",
-              "RelativeDocumentMoniker": "Management_Store\\frmProduct.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmProduct.cs",
-              "RelativeToolTip": "Management_Store\\frmProduct.cs",
-              "ViewState": "AQIAAKsAAAAAAAAAAAAAAL0AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:19:27.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmCategory.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmCategory.cs",
-              "RelativeDocumentMoniker": "Management_Store\\frmCategory.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmCategory.cs",
-              "RelativeToolTip": "Management_Store\\frmCategory.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAmwB0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:18:57.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmStockIn.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmStockIn.cs",
-              "RelativeDocumentMoniker": "Management_Store\\frmStockIn.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management_Store\\Management_Store\\frmStockIn.cs [Design]",
-              "RelativeToolTip": "Management_Store\\frmStockIn.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T08:11:10.614Z"
             }
           ]
         }

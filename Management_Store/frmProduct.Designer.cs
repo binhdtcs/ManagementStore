@@ -38,13 +38,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cboBrand = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cboCategory = new System.Windows.Forms.ComboBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cboCategory = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtBarcode = new System.Windows.Forms.TextBox();
+            this.txtReorder = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -102,78 +107,53 @@
             // 
             // txtPdesc
             // 
-            this.txtPdesc.Location = new System.Drawing.Point(169, 148);
+            this.txtPdesc.Location = new System.Drawing.Point(169, 184);
             this.txtPdesc.Name = "txtPdesc";
             this.txtPdesc.Size = new System.Drawing.Size(708, 30);
             this.txtPdesc.TabIndex = 10;
-            this.txtPdesc.TextChanged += new System.EventHandler(this.txtPdesc_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 155);
+            this.label3.Location = new System.Drawing.Point(16, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 23);
             this.label3.TabIndex = 9;
             this.label3.Text = "Mô tả";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 219);
+            this.label4.Location = new System.Drawing.Point(12, 235);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 23);
             this.label4.TabIndex = 11;
             this.label4.Text = "Thương hiệu";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // cboBrand
             // 
             this.cboBrand.FormattingEnabled = true;
-            this.cboBrand.Location = new System.Drawing.Point(169, 211);
+            this.cboBrand.Location = new System.Drawing.Point(169, 232);
             this.cboBrand.Name = "cboBrand";
             this.cboBrand.Size = new System.Drawing.Size(708, 31);
             this.cboBrand.TabIndex = 12;
-            this.cboBrand.SelectedIndexChanged += new System.EventHandler(this.cboBrand_SelectedIndexChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 279);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 23);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Danh mục";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // cboCategory
-            // 
-            this.cboCategory.FormattingEnabled = true;
-            this.cboCategory.Location = new System.Drawing.Point(169, 271);
-            this.cboCategory.Name = "cboCategory";
-            this.cboCategory.Size = new System.Drawing.Size(708, 31);
-            this.cboCategory.TabIndex = 14;
-            this.cboCategory.SelectedIndexChanged += new System.EventHandler(this.cboCategory_SelectedIndexChanged);
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(169, 343);
+            this.txtPrice.Location = new System.Drawing.Point(169, 336);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(708, 30);
             this.txtPrice.TabIndex = 16;
-            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 350);
+            this.label6.Location = new System.Drawing.Point(16, 343);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 23);
             this.label6.TabIndex = 15;
             this.label6.Text = "Giá";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // button1
             // 
@@ -181,7 +161,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(498, 399);
+            this.button1.Location = new System.Drawing.Point(492, 463);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 48);
             this.button1.TabIndex = 17;
@@ -195,7 +175,7 @@
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(282, 399);
+            this.btnUpdate.Location = new System.Drawing.Point(305, 463);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(107, 48);
             this.btnUpdate.TabIndex = 18;
@@ -209,7 +189,7 @@
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(169, 399);
+            this.btnSave.Location = new System.Drawing.Point(169, 463);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(107, 48);
             this.btnSave.TabIndex = 19;
@@ -217,22 +197,84 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 343);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 23);
+            this.label7.TabIndex = 13;
+            // 
+            // cboCategory
+            // 
+            this.cboCategory.FormattingEnabled = true;
+            this.cboCategory.Location = new System.Drawing.Point(169, 282);
+            this.cboCategory.Name = "cboCategory";
+            this.cboCategory.Size = new System.Drawing.Size(708, 31);
+            this.cboCategory.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 285);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(89, 23);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Danh mục";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(16, 144);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 23);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Barcode";
+            // 
+            // txtBarcode
+            // 
+            this.txtBarcode.Location = new System.Drawing.Point(169, 137);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.Size = new System.Drawing.Size(708, 30);
+            this.txtBarcode.TabIndex = 10;
+            // 
+            // txtReorder
+            // 
+            this.txtReorder.Location = new System.Drawing.Point(169, 394);
+            this.txtReorder.Name = "txtReorder";
+            this.txtReorder.Size = new System.Drawing.Size(708, 30);
+            this.txtReorder.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(16, 402);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(98, 23);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Đặt mua lại";
+            // 
             // frmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 476);
+            this.ClientSize = new System.Drawing.Size(900, 535);
             this.ControlBox = false;
+            this.Controls.Add(this.txtReorder);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cboCategory);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cboBrand);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtBarcode);
             this.Controls.Add(this.txtPdesc);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPcode);
             this.Controls.Add(this.label2);
@@ -242,7 +284,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.frmProduct_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -261,13 +302,18 @@
         public System.Windows.Forms.TextBox txtPdesc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         public System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Button btnUpdate;
         public System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.ComboBox cboBrand;
-        public System.Windows.Forms.ComboBox cboCategory;
         public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.ComboBox cboCategory;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox txtBarcode;
+        public System.Windows.Forms.TextBox txtReorder;
+        private System.Windows.Forms.Label label9;
     }
 }
